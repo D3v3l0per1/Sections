@@ -1,0 +1,73 @@
+*
+  margin: 0
+  padding: 0
+  border: none
+  background: #ccc
+  font-family: 'Roboto', sans-serif
+
+a
+  text-decoration: none
+  background-color: #fff
+
+.list
+  width: 100%
+
+  .content
+
+    &::after
+      display: block
+      content: "."
+      clear: both
+      height: 0
+      visibility: hidden
+
+    article
+      background-color: #fff
+      float: left
+      margin-left: 5%
+      margin-bottom: 3%
+      width: 25%
+      border: 2px solid #666
+      border-radius: 5px
+
+      &:first-child, &:nth-child(4)
+        margin-left: 0
+
+      &:hover
+        transform: scale(1.1)
+        transition: all 0.3s ease-in-out
+
+    a
+      img
+        width: 100%
+        position: relative
+        background-color: #fff
+
+      &:hover
+        transition: all 0.3s ease-in-out
+        opacity: 0.8
+
+    h4
+      font-size: 130%
+      text-align: center
+      padding: 1%
+      background-color: #fff
+      color: #093c88
+
+    p
+      text-align: center
+      background-color: #fff
+
+    #btn
+      color: #F6F932
+      padding: 2% 5%
+      font-size: 80%
+      background-color: #093c88
+      border: none
+      border-radius: 3px
+      float: right
+      margin: 5% 5% 5% 0%
+      cursor: pointer
+
+      &:hover
+        opacity: 0.8

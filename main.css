@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: #ccc;
+  font-family: 'Roboto', sans-serif; }
+
+a {
+  text-decoration: none;
+  background-color: #fff; }
+
+.list {
+  width: 100%; }
+  .list .content::after {
+    display: block;
+    content: ".";
+    clear: both;
+    height: 0;
+    visibility: hidden; }
+  .list .content article {
+    background-color: #fff;
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    width: 25%;
+    border: 2px solid #666;
+    border-radius: 5px; }
+    .list .content article:first-child, .list .content article:nth-child(4) {
+      margin-left: 0; }
+    .list .content article:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out; }
+  .list .content a img {
+    width: 100%;
+    position: relative;
+    background-color: #fff; }
+  .list .content a:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8; }
+  .list .content h4 {
+    font-size: 130%;
+    text-align: center;
+    padding: 1%;
+    background-color: #fff;
+    color: #093c88; }
+  .list .content p {
+    text-align: center;
+    background-color: #fff; }
+  .list .content #btn {
+    color: #F6F932;
+    padding: 2% 5%;
+    font-size: 80%;
+    background-color: #093c88;
+    border: none;
+    border-radius: 3px;
+    float: right;
+    margin: 5% 5% 5% 0%;
+    cursor: pointer; }
+    .list .content #btn:hover {
+      opacity: 0.8; }
